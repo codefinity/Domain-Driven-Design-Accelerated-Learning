@@ -1,4 +1,4 @@
-# Domain Driven Design Accelerated Learning
+# Accelerated Implementation Domain Driven Design
 
 ## Value Objects
 
