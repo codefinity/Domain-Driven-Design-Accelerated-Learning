@@ -1,4 +1,4 @@
-# Accelerated Implementation Domain Driven Design
+# Accelerated Implementation of Domain Driven Design
 
 > "DDD is not about structuring data in a normalized fashion. 
 > It is about modelling the Ubiquitous Language in a consistent Bounded Context" 
