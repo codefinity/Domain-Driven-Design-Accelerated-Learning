@@ -19,13 +19,26 @@
 - Side Effect free 
 - Testable
 - They tell us something about another object
-- Need a context of an entity to be relevant
+- Value Obkects need a context of an entity to be relevant
 - Comparable: Considered equal if they have the same value
 - Behaviour Rich: 
   - Should expose expressive donain-oriented behavior, through methods
   - Encapsulate state 
   - All primitive types in it should be private or protected
 - Cohesive: A value object should contain related concepts
+- Self Validating
+  - Should never be in an invalid state
+  - They should validate themselves
+  - Constructor chould check if the values are valid and throw an exception in case they are not.
+- Patterns
+  - Static Factory Methods
+  - Micro Types
+  - Collection Aversion
+- Persistance
+  - NoSql -- Better Suited
+  - SQL
+    - Flat DeNormalization
+    - Normalizing into Separate Tables
 
 
 
