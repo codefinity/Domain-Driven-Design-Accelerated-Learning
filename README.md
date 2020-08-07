@@ -35,7 +35,7 @@
   - Micro Types
   - Collection Aversion
 - Persistance
-  - NoSql -- Better Suited
+  - NoSql -- Better Suited because the structure of the record matches with the structure of the Aggregate
   - SQL
     - Flat DeNormalization
     - Normalizing into Separate Tables
