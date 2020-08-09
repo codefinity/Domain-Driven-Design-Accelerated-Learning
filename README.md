@@ -62,12 +62,12 @@
   - External events need to be versioned to avoid breaking changes.
   - If you change the internal events, your code wil not compile and you need to adjust othe code around it.
   
- - Domain Event Handlers
+- Domain Event Handlers
   - They invoke domain logic, such as domain service.
   - Application service event handlers are more infractural in nature, carrying out tasks like sending e-mails and publishing events to other bounded contexts.
   - Event handlers delegete to domain service.
   - Event handlers in the application layer trigger communication with external bounded context. They also manage communication with external services like payment gateways.
- - Domain Events can be implemented
+- Domain Events can be implemented
   - Using events.
   - In-Memory Bus, like NService Bus
   - Udi Dahan's Static DomainEvents Class
