@@ -71,5 +71,9 @@
   - Using events.
   - In-Memory Bus, like NService Bus
   - Udi Dahan's Static DomainEvents Class
-  
+    - Handling threading issues. Use [ThreadStatic] on the collection handler. Using this attribute, each thread gets its own collection, meaning the handlers registered on thread are not visible to another thread. thread static should never be used in an ASP.Net Application. [Not Useful]
+  - Injecting the event dispatcher in the domain event class.
+  - Each aggregate keeps a record of domain events in a field and they are triggered and executed once the aggregate is saved in the application layer.
+  - Using IOC container to scan all the Event Handlers and invoke them in Aplication Layer.
+-Testing Domain Events
  
