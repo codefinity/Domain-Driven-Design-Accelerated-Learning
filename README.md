@@ -47,3 +47,29 @@
 ## Entities
 
 ## Aggregates
+
+## Domain Events
+
+- In response to events, event handlers are executed.
+- When creaing event handlers that trigger asynchronous flow, you need to be clear about transactional boundaries. For example, if one event handler updates the database, and another publishes a message, you would want both operations to rollback if either of them failed.
+
+-Internal vs External Events
+
+  - Internal events are internal to a domain model and they are not sgared between bounded contexts.
+  - They are limited in scope to a single bounded context.
+  - It is ok to put domain objects on them. This poses no rosk , because other boubded context cannot become coupled to these domain objects.
+  - External events tend to be flat in structure, exposing just a few properties, most of the time corellation IDs.
+  - External events need to be versioned to avoid breaking changes.
+  - If you change the internal events, your code wil not compile and you need to adjust othe code around it.
+  
+ - Domain Event Handlers
+  - They invoke domain logic, such as domain service.
+  - Application service event handlers are more infractural in nature, carrying out tasks like sending e-mails and publishing events to other bounded contexts.
+  - Event handlers delegete to domain service.
+  - Event handlers in the application layer trigger communication with external bounded context. They also manage communication with external services like payment gateways.
+ - Domain Events can be implemented
+  - Using events.
+  - In-Memory Bus, like NService Bus
+  - Udi Dahan's Static DomainEvents Class
+  
+ 
