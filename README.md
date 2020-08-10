@@ -48,6 +48,17 @@
 
 ## Aggregates
 
+## Factories
+
+- It is recommended that you separate use from construction and explicitly encapsulate cretion logic within a factory object if it is complex or expressed better.
+- Object creation is not a domain concern, but it does live within the domain layer of an application.
+- You can use factories to reconstitue a domain objet from a persistance model, or you can use them to create new domain objects, encapsulating complex creation logic.
+- It hides the complexities of creating objects.
+- Factories an exist on an Aggregate.
+- Factror method can create Aggregate Itself from another Aggregate.
+- Factories can de-clutter your domain to ensure that it remains expressive.
+- Use a factory where elements needed for construction logic are not the concern of the dependent class.
+
 ## Domain Events
 
 - In response to events, event handlers are executed.
@@ -76,4 +87,28 @@
   - Each aggregate keeps a record of domain events in a field and they are triggered and executed once the aggregate is saved in the application layer.
   - Using IOC container to scan all the Event Handlers and invoke them in Aplication Layer.
 -Testing Domain Events
+
+
+
+### Inspired By
+
+#### Github
+
+
+#### Event Storming
+
+- [mariuszgil/awesome-eventstorming](https://github.com/mariuszgil/awesome-eventstorming)
+- [ddd-crew
+/
+eventstorming-glossary-cheat-sheet](https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet)
+
+#### Articles
+
+
+#### Books
+
+- [Implementing Domain-Driven Design](https://www.oreilly.com/library/view/implementing-domain-driven-design/9780133039900/)
+- [Patterns, Principles, and Practices of Domain-Driven Design](https://www.oreilly.com/library/view/patterns-principles-and/9781118714706/)
+- [Domain-Driven Design: Tackling Complexity in the Heart of Software](https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/)
+- [Hands-On Domain-Driven Design with .NET Core](https://www.packtpub.com/in/application-development/hands-domain-driven-design-net-core)
  
