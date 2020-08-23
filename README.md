@@ -105,7 +105,7 @@
 - Domain Services have an interface that clearly expresses the Ubiquitous Language in its bounded context.
 - Domain Service interface should be kept in the Domain Layer.
 - Implementation of the Domain Service should be kept in the Infrastructure Layer.
-
+- The implementation of Domain Service can have the access to the repository.
 
 
 ### Inspired By
