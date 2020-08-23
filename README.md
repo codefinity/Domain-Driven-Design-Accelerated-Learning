@@ -120,11 +120,14 @@
 - Domain services can be consumed from bith Application Services and Domain Model.
 - Use it when: A domain concept that involves multiple entities, but you are unsure about whic entity "owns" the behaviour. It doesnt appear to belong to any of them, and it seens awakard when you try to force fit it onto either of them. This Pattern of thinking is a strong indicator of the need for a domain service.
 
-- Encapulating Business Policies and Process
+- Used ti Encapulating Business Policies and Process
 
+- Representing contracts
+  - In the service layer to make external API calls
 
-
-
+- Utilizing domain Services
+  - Calling in the service layer
+  - Injecting it into the Domain Objects / Aggregates
 
 
 ### Inspired By
