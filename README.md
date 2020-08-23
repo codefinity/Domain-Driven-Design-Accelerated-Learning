@@ -88,6 +88,12 @@
   - Using IOC container to scan all the Event Handlers and invoke them in Aplication Layer.
 -Testing Domain Events
 
+## Domain Services
+
+- IDDD
+- A stateless operation that fulfills a domain specific task.
+- Best Indication that you should create a domain service in the domain model is when the operation you need to perform feels out of place as a method on an aggregate or value object.
+- 
 
 
 ### Inspired By
