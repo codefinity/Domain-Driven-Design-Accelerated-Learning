@@ -93,7 +93,9 @@
 - IDDD
 - A stateless operation that fulfills a domain specific task.
 - Best Indication that you should create a domain service in the domain model is when the operation you need to perform feels out of place as a method on an aggregate or value object.
-- 
+- We DON't want to house business logic in an Application Service, but we DO want business logic housed in a Domain Service.
+- Domain service is a client to Application Service.
+- Operation name of Domain Service is a part of Ubiquitous Language. 
 
 
 ### Inspired By
