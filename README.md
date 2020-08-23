@@ -112,6 +112,8 @@
   - Implementation of the Domain Service should be kept in the Domain Layer.
   - The implementation of Domain Service can have the access to the repository.
 
+- Application Service directly used the Domain Service.
+
 
 ### Inspired By
 
