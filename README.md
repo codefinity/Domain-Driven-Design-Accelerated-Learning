@@ -96,6 +96,16 @@
 - We DON't want to house business logic in an Application Service, but we DO want business logic housed in a Domain Service.
 - Domain service is a client to Application Service.
 - Operation name of Domain Service is a part of Ubiquitous Language. 
+- Domain Services can deal with multiple domain objects in a single atomic operation.
+- You can use Domain Service to
+  - Perform a significant Business Operation.
+  - Transform a domain object from one composition to another.
+  - Calculate a Value requiring input from more than one domain object.
+- Domain Services are stateless.
+- Domain Services have an interface that clearly expresses the Ubiquitous Language in its bounded context.
+- Domain Service interface should be kept in the Domain Layer.
+- Implementation of the Domain Service should be kept in the Infrastructure Layer.
+
 
 
 ### Inspired By
