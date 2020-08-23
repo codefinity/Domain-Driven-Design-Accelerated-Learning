@@ -114,6 +114,10 @@
 
 - Application Service directly used the Domain Service.
 
+- PPPDDD
+
+- 
+
 
 ### Inspired By
 
